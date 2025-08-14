@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ankur Yadav | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body, html {height: 100%;}
+    #vanta-bg {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;}
+    body {color: #fff; line-height: 1.6;}
+    header {text-align: center; padding: 60px 20px; animation: fadeDown 1s ease forwards;}
+    @keyframes fadeDown {from {opacity: 0; transform: translateY(-30px);} to {opacity: 1; transform: translateY(0);}}
+    header h1 {font-size: 3rem; color: #3fff47; animation: float 3s ease-in-out infinite;}
+    @keyframes float {0%, 100% {transform: translateY(0);} 50% {transform: translateY(-8px);}}
+    header p {font-size: 1.2rem; color: #ddd; margin-top: 10px;}
+    marquee {color: #3fff47; font-weight: bold; margin-top: 15px;}
+    nav {display: flex; justify-content: center; gap: 20px; padding: 15px; background: rgba(0,0,0,0.6); backdrop-filter: blur(8px);}
+    nav a {color: white; text-decoration: none; font-weight: 600; position: relative; transition: color 0.3s;}
+    nav a::after {content: ''; position: absolute; width: 0; height: 3px; background: #3fff47; left: 0; bottom: -5px; transition: 0.3s;}
+    nav a:hover {color: #3fff47;}
+    nav a:hover::after {width: 100%;}
+    section {padding: 50px 20px; max-width: 1000px; margin: auto;}
+    .card {background: rgba(0, 0, 0, 0.7); border-radius: 15px; padding: 30px; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); opacity: 0; transform: translateY(40px); transition: all 0.8s ease, transform 0.3s;}
+    .card.show {opacity: 1; transform: translateY(0);}
+    .card:hover {transform: translateY(-8px) scale(1.02); box-shadow: 0 10px 25px rgba(0,0,0,0.5);}
+    h2 {color: #3fff47; margin-bottom: 15px;}
+    .btn {display: inline-block; margin-top: 15px; padding: 12px 25px; background: #3fff47; color: black; font-weight: bold; border-radius: 30px; text-decoration: none; transition: 0.3s;}
+    .btn:hover {background: #2ecc40; transform: scale(1.05); box-shadow: 0 5px 15px rgba(63,255,71,0.4);}
+    footer {background: rgba(0,0,0,0.6); text-align: center; padding: 20px; font-size: 0.9rem; color: #ccc; margin-top: 20px;}
+  </style>
+</head>
+<body>
+  <div id="vanta-bg"></div>
+
+  <header>
+    <h1>Ankur Yadav</h1>
+    <p>B.Tech CSE | Python | AWS | Data Analytics</p>
+    <marquee>🚀 Welcome to My Portfolio | Explore my Projects, Skills, and Resume!</marquee>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>Hi, I'm Ankur Yadav, a Computer Science student from Gulzar Group of Institutes, Punjab (Batch: 2022-2026). I'm passionate about Python, AWS, Networking, and Data Analytics. I’ve built real-world projects like a Face Recognition Attendance System and a Streamlit-based Weather Dashboard.</p>
+  </section>
+
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming: Python, C++, JavaScript</li>
+      <li>Cloud: AWS (S3, EC2, IAM, etc.)</li>
+      <li>Data Tools: Pandas, NumPy, Matplotlib</li>
+      <li>Frameworks: Django</li>
+      <li>Tools: GitHub, Power BI, MySQL</li>
+      <li>Languages: Hindi, English, Punjabi</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>🌦 Weather Dashboard</strong> – Built with Python + Streamlit, shows current weather with graphs.</li>
+      <li><strong>🎓 Face Recognition Attendance System</strong> – Python, OpenCV, MySQL, and Tkinter GUI for real-time attendance.</li>
+    </ul>
+  </section>
+
+  <section id="certifications" class="card">
+    <h2>Certifications</h2>
+    <ul>
+      <li><strong>C++ with Data Structures and Algorithms</strong> – <a href="https://drive.google.com/file/d/1xGZWygYfI86z77IHBV5yBtc4FdTGqJsy/view?usp=drive_link" target="_blank">View Certificate</a></li>
+      <li><strong>AWS Fundamentals: Core Services</strong> – <a href="https://drive.google.com/file/d/1POeF9ZGQwR2UwlKEuVPZPX2GG2HK_qme/view" target="_blank">View Certificate</a></li>
+      <li><strong>Python for Everyone</strong> – <a href="https://drive.google.com/file/d/1WO1VBn9LgV2650u7qTjkrxa739FA_ado/view?usp=drive_link" target="_blank">View Certificate</a></li>
+    </ul>
+  </section>
+
+  <section id="education" class="card">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech (CSE)</strong> – Gulzar Group of Institutes, Punjab (2022–2026) – CGPA: 7.5</li>
+      <li><strong>12th (PSEB)</strong> – Govt. Senior Secondary School Multipurpose, 2022 – 75%</li>
+      <li><strong>10th (PSEB)</strong> – Perfect Public Senior Secondary School, 2020 - 85%</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ankuryadav2375@gmail.com">ankuryadav2375@gmail.com</a></p>
+    <p>Phone: +91 62842 95232</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ankur-yadav-153916258" target="_blank">ankur-yadav-153916258</a></p>
+    <p>GitHub: <a href="https://github.com/ankuryadav4850" target="_blank">github.com/AnkurYadav-main</a></p>
+    <a class="btn" href="final resume.pdf" download>📄 Download Resume</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ankur Yadav. All rights reserved.</p>
+  </footer>
+
+  <!-- Fixed Vanta.js imports -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3fff47,
+      backgroundColor: 0x000000,
+      points: 15.00,
+      spacing: 20.00
+    });
+  </script>
+
+  <!-- Card animation on scroll -->
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const showCards = () => {
+      cards.forEach(card => {
+        if (card.getBoundingClientRect().top < window.innerHeight - 100) {
+          card.classList.add('show');
+        }
+      });
+    };
+    window.addEventListener('scroll', showCards);
+    showCards();
+  </script>
+</body>
+</html>
